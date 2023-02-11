@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center">
+
+<!--    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile Data"
+        android:id="@+id/prof_data"
+        android:layout_marginRight="10dp"
+
+        >
+
+    </Button>-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:id="@+id/logoutbtn"
+
+        >
+    </Button>
+
+
+</LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_restaurants"
+        tools:listitem="@layout/restaurant_item"
+        android:contentDescription="@string/app_name"
+        />
+
+    <!--<androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_order_details_item"
+        tools:listitem="@layout/order_details_item"
+        android:contentDescription="@string/app_name"
+        />-->
+
+</LinearLayout>
